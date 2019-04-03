@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestNative">
+    <parameter name="propertiesFile" value="nativetest.properties"></parameter>
+    <test name="native">
+        <classes>
+            <class name="testSuiteSetup.Hooks"></class>
+            <class name="nativeTests.SimpleNativeTests"></class>
+        </classes>
+    </test>
+</suite>

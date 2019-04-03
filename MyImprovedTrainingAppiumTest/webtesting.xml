@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestAll" >
+    <parameter name="propertiesFile" value="webtest.properties"></parameter>
+    <test name="web">
+        <classes>
+            <class name="testSuiteSetup.Hooks"></class>
+            <class name="webTests.SimpleWebTests"></class>
+        </classes>
+    </test>
+</suite>
